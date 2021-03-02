@@ -21,6 +21,9 @@ public class RestHttpController extends BaseController{
     public String testController(@PathVariable("hhh") String value) {
         logger.info("value = {" + value + "}");
         logger.warn(value);
+        logger.warn(value);
+        logger.warn(value);
+        logger.warn(value);
         LoggerUtils.info(logger, "这是日志打印的语句, 第一个 {1} , 第二个 {2}", value, "hello");
         LoggerUtils.error(logger, "这是日志打印的语句, 第一个 {1} , 第二个 {2}", value, "hello");
         LoggerUtils.warn(logger, "这是日志打印的语句, 第一个 {1} , 第二个 {2}", value, "hello");
